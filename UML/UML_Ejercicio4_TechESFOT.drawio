@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2026-11-15T20:20:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="diagram_1" name="Ejercicio 4 - TechESFOT">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_emp" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;br&gt;&lt;i&gt;Empleado&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=36;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="30" width="510" height="316" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emp" value="- codigo : String&lt;br&gt;- nombre : String&lt;br&gt;- apellido : String&lt;br&gt;- cargo : String&lt;br&gt;- sueldoBase : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_emp">
+          <mxGeometry y="36" width="510" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_emp" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_emp">
+          <mxGeometry y="136" width="510" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_emp" value="+ Empleado(codigo: String, nombre: String, apellido: String, cargo: String, sueldoBase: double)&lt;br&gt;+ getCodigo() : String&lt;br&gt;+ getNombre() : String&lt;br&gt;+ getApellido() : String&lt;br&gt;+ getNombreCompleto() : String&lt;br&gt;+ getCargo() : String&lt;br&gt;+ getSueldoBase() : double&lt;br&gt;+ {abstract} calcularSueldo() : double&lt;br&gt;+ toString() : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_emp">
+          <mxGeometry y="144" width="510" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_etc" value="EmpleadoTiempoCompleto" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="20" y="380" width="540" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_etc" value="- bono : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_etc">
+          <mxGeometry y="28" width="540" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_etc" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_etc">
+          <mxGeometry y="56" width="540" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_etc" value="+ EmpleadoTiempoCompleto(codigo: String, nombre: String, apellido: String, cargo: String, sueldoBase: double, bono: double)&lt;br&gt;+ getBono() : double&lt;br&gt;+ calcularSueldo() : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_etc">
+          <mxGeometry y="64" width="540" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_emt" value="EmpleadoMedioTiempo" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="540" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="attr_emt" value="- horasTrabajadas : int&lt;br&gt;- pagoPorHora : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_emt">
+          <mxGeometry y="28" width="540" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="sep_emt" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" vertex="1" parent="cls_emt">
+          <mxGeometry y="74" width="540" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="meth_emt" value="+ EmpleadoMedioTiempo(codigo: String, nombre: String, apellido: String, cargo: String, horasTrabajadas: int, pagoPorHora: double)&lt;br&gt;+ getHorasTrabajadas() : int&lt;br&gt;+ getPagoPorHora() : double&lt;br&gt;+ calcularSueldo() : double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cls_emt">
+          <mxGeometry y="82" width="540" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="inh_etc" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_etc" target="cls_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inh_emt" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;endSize=12;strokeWidth=1.5;strokeColor=#333333;" edge="1" parent="1" source="cls_emt" target="cls_emp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
